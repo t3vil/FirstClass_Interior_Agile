@@ -24,3 +24,6 @@ function updateProgressBar() {
 
   // Call the function to update the progress bar
   updateProgressBar();
+
+ //model
+ 
