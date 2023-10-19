@@ -1,9 +1,12 @@
-// Get references to the alert overlay and related elements
+
+document.addEventListener("DOMContentLoaded", function () {
+
 const alertOverlay = document.getElementById("alert-overlay");
-const alertBox = document.getElementById("alert-box");
-const alertMessage = document.getElementById("alert-message");
-const closeButton = document.getElementById("close-button");
-const form = document.querySelector("form"); // Reference to the form element
+  const alertBox = document.getElementById("alert-box");
+  const alertMessage = document.getElementById("alert-message");
+  const closeButton = document.getElementById("close-button");
+  const form = document.querySelector("form");
+  const phoneInput = form.querySelector('input[type="tel"]');
 
 // Function to show the alert overlay
 function showAlert(message) {
@@ -28,29 +31,68 @@ function hideOverlay() {
 
 // Add a submit event listener to the form
 form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the form from submitting (you can submit it via AJAX if needed)
+    event.preventDefault(); 
 
-    // Show the overlay
+   
     showOverlay();
 
-    // Simulate sending the form data (you can replace this with your AJAX code)
+    
     setTimeout(function () {
-        // Hide the form overlay
-        hideOverlay();
+  
+      hideOverlay();
+      
+      showAlert("Message Sent!");
+    }, 2000);
+  });
 
-        // Show the message sent alert
-        showAlert("Message Sent!");
-    }, 2000); // Simulated delay, replace with your actual logic
-});
 
 // Add a click event listener to the "OK" button in the alert
 closeButton.addEventListener("click", function () {
-    hideAlert(); // Hide the alert overlay
-    // Optionally, you can add more logic here or simply reload the page
-    location.reload(); // Reload the page
+    hideAlert(); 
+    
+    location.reload(); 
 });
 // Scroll to the top of the page when it reloads
-// Scroll to the top of the page when it loads
+
 window.addEventListener("DOMContentLoaded", function () {
     window.scrollTo(0, 0);
 });
+
+
+$(document).ready(function() {
+
+  var currentUrl = window.location.href;
+
+k
+  $(".navbar-nav .nav-link").each(function() {
+    var linkUrl = $(this).attr("href");
+
+    
+    if (currentUrl.indexOf(linkUrl) !== -1) {
+      
+      $(this).addClass("active");
+    }
+  });
+  
+  if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/")) {
+    $(".navbar-nav .nav-link[href='index.html']").addClass("active");
+  }
+});
+
+
+
+//phone
+phoneInput.addEventListener("input", function () {
+ 
+    this.value = this.value.replace(/\D/g, "");
+  });
+
+
+});
+
+//send btn
+const sendButton = document.getElementById("send-button");
+  sendButton.addEventListener("click", function () {
+   
+    form.submit();
+  });
