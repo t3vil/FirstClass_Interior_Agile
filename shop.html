@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+  
+    <title>Tech->Connect</title>
+</head>
+<body>
+    
+
+
+    <div id="loading-container">
+    
+        <div id="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+    
+    
+    <div data-aos="slide-down">
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+          <div class="container-fluid">
+            <div class="d-flex align-items-center">
+              <img   src="image/tcup.png" alt=""  style="margin-right: 30px;margin-left: 30px;">
+              <span class="navbar-text" style="margin-right: 50px;">Tech->Connect</span> 
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+              <div class="ml-auto"> 
+                  <form class="d-flex">
+                      <ul class="navbar-nav"> 
+                          <li class="nav-item">
+                              <a class="nav-link active" href="index.html">Home
+                                  <span class="visually-hidden">(current)</span>
+                              </a>  
+                              </li>
+                              <li class="nav-item" style="margin-right: 310px;">
+                                <a class="nav-link" href="about.html">About</a>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="shop.html">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                          </ul>
+                          <form class="d-flex">
+                            <input class="form-control me-sm-2" type="search" placeholder="Search">
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                            <span id="cart-icon" class="cart-icon" onclick="openCheckoutSummary()">
+                              <i class="fas fa-shopping-cart cart-icon-large"></i>
+                          </span>
+                          </form>
+                        </div>
+                      </div>
+                    </nav>
+    </div>
+
+
+    <!--AD Banner Video Local Download -->
+  <div class="cr7hero"data-aos="slide-down">
+    <div class="herov">
+      <video autoplay loop muted src="vid/y2mate.com - Galaxy S23 Series Meet the epic inspired by nature in 3D  Samsung_1080p.mp4"></video>
+      <div class="overlay-text">
+       <!-- <span class="name">ALWAYS </span> <span class="lastname"> Tech->Connect !</span>-->
+      </div>
+    </div>
+  </div>
+
+  
+<div class="text-center" data-aos="zoom-in" style="margin-top: 50px; margin-bottom: 50px;">
+    <h1 class="text-center" style="font-size: 42px; font-weight: bold; font-family: 'Arial', sans-serif;">  Mobile Phones📱</h1>
+  </div>
+  
+  <!-- Top  Products row 1 -->
+ 
+  <div class="row justify-content-center align-items-center g-2" data-aos="fade-left">
+ <!-- Product 1 -->
+ <div class="col-sm-4 p-3">
+    <div class="card mb-3 fixed-height-card">
+        <div class="card-body">
+            <h5 class="card-title">NOTHING PHONE 2 5G 12GB RAM 512GB</h5>
+            <h6 class="card-subtitle text-muted">NZ$1,499.00</h6>
+        </div>
+       <img src="image/shopImg/np2.jpeg" alt="">
+        <div class="card-body">
+            <p class="card-text">Come to the bright side!</p>
+        </div>
+        <button type="button" 
+    class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+    data-product-id="1"
+    data-product-name="NOTHING PHONE 2 5G 12GB RAM 512GB"
+    data-iframe-url="https://my.spline.design/nothingphone2-4b09fa022f637590a82d3b23aaa51a26/"
+    data-product-description="Uniquely designed Nothing OS 2.0 New Glyph Interface 50 MP dual rear camera + 32 MP front camera 6.7” flexible LTPO AMOLED display Snapdragon® 8+ Gen 1"
+    data-product-price="1499.00"
+    data-product-image="image/shopImg/np2.jpeg" 
+    onclick="showProductDetails(1)"
+>Buy</button>
+
+    
+    </div>
+</div>
+<!-- Product 2 -->
+<div class="col-sm-4 p-3">
+    <div class="card mb-3 fixed-height-card">
+        <div class="card-body">
+            <h5 class="card-title">Apple iPhone 15 Pro 128GB</h5>
+            <h6 class="card-subtitle text-muted">NZ$2,009.00</h6>
+        </div>
+       <img src="image/shopImg/i15pro.jpg" alt="">
+        <div class="card-body">
+            <p class="card-text">All New Titanium</p>
+        </div>
+        <button type="button" 
+        class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+        data-product-id="2"
+        data-product-name="Apple iPhone 15 Pro 128GB"
+        data-iframe-url="https://my.spline.design/iphone15promaxmockup-12245aaf57cf5bb1f70c976fa4e30109/"
+        data-product-description="Super Retina XDR display footnote,Titanium with textured matt glass back,Supports USB 3 for up to 20x faster transfers"
+        data-product-price="2009.00"
+        data-product-image="image/shopImg/i15pro.jpg" 
+        onclick="showProductDetails(2)"
+    >Buy</button>
+    
+    </div>
+</div>
+<!-- Product 3 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Apple iPhone 14 Pro 128GB</h5>
+          <h6 class="card-subtitle text-muted">NZ$1,999.00</h6>
+      </div>
+      <img src="image/shopImg/i140pro.jpg" alt="">
+      <div class="card-body">
+          <p class="card-text">Dynamic Island, a magical new way to interact with iPhone.</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="3"
+      data-product-name="Apple iPhone 14 Pro 128GB"
+      data-iframe-url="https://my.spline.design/iphone14procopy-ecedd75a3a40d023bbb9ac348301477d/"
+      data-product-description=" The iPhone 14 Pro is the perfect combination of premium design, excellent cameras and unbeatable battery life."
+      data-product-price="1999.00"
+      data-product-image="image/shopImg/i140pro.jpg"
+      onclick="showProductDetails(3)"
+  >Buy</button>
+  </div>
+</div>
+</div>
+
+
+
+<div class="overlay" id="product-overlay" style="display: none;">
+  <!-- Overlay for product details -->
+  <div class="product-details">
+    <span class="close-button" onclick="closeProductDetails()">&times;</span>
+    <h5 id="product-name">Product Name</h5>
+    <div id="product-image-container">
+      <!-- The product image will be displayed here -->
+    </div>
+    <p id="product-description">Product description goes here.</p>
+    <label for="quantity">Select Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <button type="button" class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+    
+  </div>
+</div>
+
+<div class="overlay" id="added-to-cart-overlay" style="display: none;">
+  <div class="product-details">
+    <span class="close-button" onclick="closeAddedToCartDetails()">&times;</span>
+    <p id="added-message"></p>
+    <img id="added-product-image" alt="Added Product Image">
+    <div>
+      <button type="button" id="continue-shopping-button" class="btn btn-secondary" onclick="continueShopping()">Continue Shopping</button>
+      <button type="button" class="btn btn-success" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="overlay" id="checkout-summary-overlay" style="display: none;">
+  <div class="product-details">
+      <span class="close-button" onclick="closeCheckoutSummary()">&times;</span>
+      <h5>Checkout Summary</h5>
+      <div id="cart-items">
+          <!-- Cart items will be displayed here -->
+      </div>
+      <p id="total-price">Total Price: $0.00</p>
+      <div id="cart-empty-message" style="display: none;">Your cart is empty.</div> <!-- Empty cart message -->
+      <div class="button-container">
+        <button type="button" class="btn btn-secondary" onclick="continueShoppingWithoutClearingCart()">Continue Shopping</button>
+        <button type="button" class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+      
+        <button type="button" class="btn btn-success" onclick="proceedToPayment()">Proceed to Checkout</button>
+      </div>
+     
+  </div>
+</div>
+
+
+ 
+
+
+
+
+       
+      
+      
+    
+<div class="text-center" data-aos="zoom-in" style="margin-top: 50px; margin-bottom: 50px;">
+  <h1 class="text-center" style="font-size: 42px; font-weight: bold; font-family: 'Arial', sans-serif;">  Laptops 💻</h1>
+</div>
+
+<!-- Top  Products row 1 -->
+
+<div class="row justify-content-center align-items-center g-2" data-aos="fade-left">
+<!-- Product 1 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Apple 16" Macbook Pro M2</h5>
+          <h6 class="card-subtitle text-muted">NZ $3,999.00</h6>
+      </div>
+    <img src="image/shopImg/mac16.jpg" alt="">
+      <div class="card-body">
+          <p class="card-text">Apple M2 Pro Chip, 12C CPU and 19C GPU, 512GB SSD - Space Grey</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="4"
+      data-product-name="Apple 16 Macbook Pro M2"
+      data-iframe-url="https://my.spline.design/macbookproforex-599a7a2192da4599950bdf7b34d0c4d5/"
+      data-product-description="MacBook Pro. Big screen. Max power. Quick study and the best for the brightest. The new 16-inch MacBook Pro delivers game-changing performance for any course load."
+      data-product-price="3999.00"
+      data-product-image="image/shopImg/mac16.jpg"
+      onclick="showProductDetails(4)"
+  >Buy</button>
+  
+  </div>
+</div>
+<!-- Product 2 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Custom Mini PC </h5>
+          <h6 class="card-subtitle text-muted">NZ $1,683.85</h6>
+      </div>
+      <img src="image/shopImg/minipc.png" alt="">
+      <div class="card-body">
+          <p class="card-text">Just A Mini Pc</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="5"
+      data-product-name="Custom Mini PC"
+      data-product-image="image/shopImg/minipc.png"
+      data-product-description="RTX 1000000 AMG FRS DLSS CR7"
+      data-product-price="1683.00"
+      data-product-image="image/shopImg/minipc.png"
+      onclick="showProductDetails(5)"
+  >Buy</button>
+  </div>
+</div>
+<!-- Product 3 --> 
+<div class="col-sm-4 p-3" data-aos="slide-right">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Asus ROG Strix G15</h5>
+          <h6 class="card-subtitle text-muted">NZ $2,030.45</h6>
+      </div>
+      <img src="image/shopImg/ROG.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">Asus ROG Strix G15 FHD 144Hz Gaming Laptop (512GB) [RTX 3050]</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="6"
+      data-product-name="Asus ROG Strix G15"
+      data-iframe-url=" https://my.spline.design/asusroglaptop-2d33d2915708591b33add1a85bdce28b/"
+      data-product-description="HAS NO CAMERA"
+      data-product-price="2030.45"
+      data-product-image="image/shopImg/ROG.jpg"
+      onclick="showProductDetails(6)"
+  >Buy</button>
+  </div>
+</div>
+</div>
+
+
+  
+<div class="text-center" data-aos="zoom-in" style="margin-top: 50px; margin-bottom: 50px;">
+  <h1 class="text-center" style="font-size: 42px; font-weight: bold; font-family: 'Arial', sans-serif;">  Gaming 🎮</h1>
+</div>
+
+<!-- Top  Products row 1 --> 
+
+<div class="row justify-content-center align-items-center g-2" data-aos="fade-left">
+<!-- Product 1 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Nintendo Switch </h5>
+          <h6 class="card-subtitle text-muted">NZ $617.99</h6>
+      </div>
+      <img src="image/shopImg/Ns.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">Nintendo Switch OLED Console - Neon Vibrant 7-inch OLED screen!</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="7"
+      data-product-name="Nintendo Switch OLED Console"
+      data-iframe-url="https://my.spline.design/nintendoswitchcopy-9630fdb219d6b758b4c26413ed1198d3/"
+      data-product-description="Flaunting a revolutionised 7 OLED screen, the Nintendo Switch OLED Model will bring your favourite games to life! This portable and versatile console lets you switch up your gaming experience. "
+      data-product-price="617.99"
+      data-product-image="image/shopImg/Ns.jpg"
+      onclick="showProductDetails(7)"
+  >Buy</button>
+  
+  </div>
+</div>
+<!-- Product 2 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Game Boy</h5>
+          <h6 class="card-subtitle text-muted">NZ $183.85</h6>
+      </div>
+      <img src="image/shopImg/gb.png" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">32GB DDR5 RAM - 1TB NVMe SSD</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="8"
+      data-product-name="Game Boy"
+      data-iframe-url=" https://my.spline.design/gameboycopy-e3a247573b686c75bb911416aba6e4b3/"
+      data-product-description="Handheld Game Console-Portable Retro Video Game with 400 Classic FC Games, 2.8 Inch Color"
+      data-product-price="183.85"
+      data-product-image="image/shopImg/gb.png"
+      onclick="showProductDetails(8)"
+  >Buy</button>
+  </div>
+</div>
+<!-- Product 3 -->
+<div class="col-sm-4 p-3" data-aos="slide-right">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">GGPC RTX 4060 Gaming PC</h5>
+          <h6 class="card-subtitle text-muted">$2,183.85 inc GST</h6>
+      </div>
+      <img src="image/shopImg/msi.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">Intel i5 13400F</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="9"
+      data-product-name="GGPC RTX 4060 Gaming PC"
+      data-product-image="image/shopImg/msi.jpg"
+      data-product-description="Intel i5 13400F 10 Core - 32GB DDR5 RAM - 1TB NVMe SSD - NVIDIA GeForce RTX4060 8GB Graphics - AX WiFi 6 + Bluetooth - Windows 11 Home"
+      data-product-price="2183.85"
+      data-product-image="image/shopImg/msi.jpg"
+      onclick="showProductDetails(9)"
+  >Buy</button>
+  </div>
+</div>
+</div>
+
+  
+<div class="text-center" data-aos="zoom-in" style="margin-top: 50px; margin-bottom: 50px;">
+  <h1 class="text-center" style="font-size: 42px; font-weight: bold; font-family: 'Arial', sans-serif;">  Smart Watches ⌚</h1>
+</div>
+
+<!-- Top  Products row 1 -->
+
+<div class="row justify-content-center align-items-center g-2" data-aos="fade-left">
+<!-- Product 1 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Apple Watch </h5>
+          <h6 class="card-subtitle text-muted">NZ $659.00</h6>
+      </div>
+      <img src="image/shopImg/applewatch.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">Apple Watch Series 7 (GPS) 45mm - Midnight Aluminium Case</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="10"
+      data-product-name="Apple Watch"
+      data-iframe-url=" https://my.spline.design/applewatchcopy-123355c9ee1990fef1fe7957b60c9de5/"
+      data-product-description="with Midnight Sport Band - ECG (Electrocardiogram) on your wrist - Blood oxygen monitoring - Fall Detection"
+      data-product-price="659.00"
+      data-product-image="image/shopImg/applewatch.jpg"
+      onclick="showProductDetails(10)"
+  >Buy</button>
+  
+  </div>
+</div>
+<!-- Product 2 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Apple Watch SE (2nd Gen)</h5>
+          <h6 class="card-subtitle text-muted">NZ $448.99</h6>
+      </div>
+      <img src="image/shopImg/se.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">Apple Watch SE (2nd Gen) (GPS) 40mm - Midnight Aluminium Case</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="11"
+      data-product-name="Apple Watch SE (2nd Gen)"
+      data-iframe-url="https://my.spline.design/applewatch-3c1d8da6d060ed7d993435a8c39914d9/"
+      data-product-description="with Midnight Sport Band - Regular - Crash and Fall Detection - Dual-core S8 Processor - 50m Water resistance - Emergency SOS"
+      data-product-price="448.99"
+      data-product-image="image/shopImg/se.jpg"
+      onclick="showProductDetails(11)"
+  >Buy</button>
+  </div>
+</div>
+<!-- Product 3 -->
+<div class="col-sm-4 p-3" data-aos="slide-right">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Samsung Galaxy Watch5 (Bluetooth) 40mm - Graphite</h5>
+          <h6 class="card-subtitle text-muted">NZ $448.99</h6>
+      </div>
+      <img src="image/shopImg/sw.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">Graphite Case with Graphite Band - ECG (Electrocardiogram) - Sapphire Crystal Display </p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="12"
+      data-product-name="Samsung Galaxy Watch5 (Bluetooth) 40mm - Graphite"
+      data-iframe-url="https://my.spline.design/3dsmartwatch-eb2ac0d025d68ae65cc9d7a8d01c9954/"
+      data-product-description="Graphite Case with Graphite Band - ECG (Electrocardiogram) - Sapphire Crystal Display - Heart Rate Monitoring - IP68 + 5ATM Water Resistance - Sleep & Fitness Tracking"
+      data-product-price="448.99"
+      data-product-image="image/shopImg/sw.jpg"
+      onclick="showProductDetails(12)"
+  >Buy</button>
+  </div>
+</div>
+</div>
+
+  
+<div class="text-center" data-aos="zoom-in" style="margin-top: 50px; margin-bottom: 50px;">
+  <h1 class="text-center" style="font-size: 42px; font-weight: bold; font-family: 'Arial', sans-serif;">  Photos/Videos 📸</h1>
+</div>
+
+<!-- Top  Products row 1 -->
+
+<div class="row justify-content-center align-items-center g-2" data-aos="fade-left">
+<!-- Product 1 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Canon EOS 1500D DSLR Entry-Level Camera </h5>
+          <h6 class="card-subtitle text-muted">NZ $946.00 inc</h6>
+      </div>
+      <img src="image/shopImg/CAm (1).webp" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">Canon EOS 1500D DSLR</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="13"
+      data-product-name="Canon EOS 1500D DSLR Entry-Level Camera"
+      data-product-image="image/shopImg/CAm (1).webp"
+      data-product-description="Canon EOS 1500D DSLR Entry-Level Camera w/ EF-S 18-55mm f/3.5-5.6 III Lens Kit ,24.1MP, CMOS Sensor, 3 inch LCD Built in Wi-Fi & NFC"
+      data-product-price="946.00"
+      data-product-image="image/shopImg/CAm (1).webp"
+      onclick="showProductDetails(13)"
+  >Buy</button>
+  
+  </div>
+</div>
+<!-- Product 2 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Sony ZV-1F Vlogging Camera</h5>
+          <h6 class="card-subtitle text-muted">NZ $875.54</h6>
+      </div>
+      <img src="image\shopImg\scam.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">Sony Vlogging Camera</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="14"
+      data-product-name="Canon EOS 1500D DSLR Entry-Level Camera"
+      data-product-image="image/shopImg/scam.jpg"
+      data-product-description="Sony ZV-1F Vlogging Camera - 20.1MP  Exmor RS BSI CMOS Sensor, ZEISS 20mm-Equivalent f/2-f/8 Lens, UHD 4K30p Video Recording"
+      data-product-price="875.54"
+      data-product-image="image\shopImg\scam.jpg"
+      onclick="showProductDetails(14)"
+  >Buy</button>
+  </div>
+</div>
+<!-- Product 3 -->
+<div class="col-sm-4 p-3" data-aos="slide-right">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">POLAROID Now+</h5>
+          <h6 class="card-subtitle text-muted">NZ $366.00</h6>
+      </div>
+      <img src="image/shopImg/pcam.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">POLAROID Now+ Gen 2 Instant Camera - White</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="15"
+      data-product-name="POLAROID Now+"
+      data-product-image="image/shopImg/pcam.jpg"
+      data-product-description="POLAROID Now+ Gen 2 Instant Camera - White"
+      data-product-price="366.00"
+      data-product-image="image/shopImg/pcam.jpg"
+      onclick="showProductDetails(15)"
+  >Buy</button>
+  </div>
+</div>
+</div>
+
+  
+<div class="text-center" data-aos="zoom-in" style="margin-top: 50px; margin-bottom: 50px;">
+  <h1 class="text-center" style="font-size: 42px; font-weight: bold; font-family: 'Arial', sans-serif;">  Tablets </h1>
+</div>
+
+<!-- Top  Products row 1 -->
+
+<div class="row justify-content-center align-items-center g-2" data-aos="fade-left">
+<!-- Product 1 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Apple iPad  Space Grey</h5>
+          <h6 class="card-subtitle text-muted">NZ $515.00</h6>
+      </div>
+      <img src="image/shopImg/ipad.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">128GB Storage - WiFi - Apple M2 Chip</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="16"
+      data-product-name="Apple iPad  - Space Grey"
+      data-product-image="image/shopImg/ipad.jpg"
+      data-product-description="64GB Storage - WiFi "
+      data-product-price="515.00"
+      onclick="showProductDetails(16)"
+  >Buy</button>
+  </div>
+</div>
+<!-- Product 2 -->
+<div class="col-sm-4 p-3">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Apple iPad Pro (4th Gen) 11" - Space Grey</h5>
+          <h6 class="card-subtitle text-muted">NZ $1,532.32</h6>
+      </div>
+      <img src="image/shopImg/IPRO.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">128GB Storage - WiFi - Apple M2 Chip</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="17"
+      data-product-name="Apple iPad Pro (4th Gen) 11 - Space Grey"
+      data-product-image="image/shopImg/IPRO.jpg"
+      data-product-description="128GB Storage - WiFi - Apple M2 Chip"
+      data-product-price="1532.32"
+      onclick="showProductDetails(17)"
+  >Buy</button>
+  </div>
+</div>
+<!-- Product 3 -->
+<div class="col-sm-4 p-3" data-aos="slide-right">
+  <div class="card mb-3 fixed-height-card">
+      <div class="card-body">
+          <h5 class="card-title">Apple iPad Air (5th Gen) 10.9" - Pink</h5>
+          <h6 class="card-subtitle text-muted">NZ $1,178.00 </h6>
+      </div>
+      <img src="image/shopImg/iair.jpg" alt="Orange">
+      <div class="card-body">
+          <p class="card-text">64GB Storage - WiFi - M1 Chip</p>
+      </div>
+      <button type="button" 
+      class="btn btn-primary btn-sm justify-content-center add-to-cart-btn" 
+      data-product-id="18"
+      data-product-name="Apple iPad Air (5th Gen) 10.9 - Pink"
+      data-product-image="image/shopImg/iair.jpg"
+      data-product-description="64GB Storage - WiFi - M1 Chip"
+      data-product-price="1178.00"
+      onclick="showProductDetails(18)"
+  >Buy</button>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="text-center" data-aos="zoom-in" style="margin-top: 50px; margin-bottom: 50px;">
+  <h1 class="text-decoration-underline "style="font-size: 42px; font-weight: bold; font-family: 'Arial', sans-serif;" >END</h1>
+
+
+
+
+
+  
+
+
+
+      
+<div data-aos="slide-up">
+
+    <footer class="text-white text-center text-lg-start bg-dark">
+    
+      <div class="container p-4">
+        
+        <div class="row mt-4">
+          
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Who We Are ?</h5>
+    
+            <p>
+              major non-playable character in Persona 5 Royal. 
+            </p>
+    
+            <p>
+              He is a counselor hired by Shujin Academy to support students after the incident caused.
+            </p>
+    
+            <div class="mt-4">
+              <a href="https://www.facebook.com/Cristiano/" target="_blank" id="facebook-icon" class="facebook"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="https://www.instagram.com/YourInstagramProfileURL" target="_blank" id="instagram-icon" class="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/YourLinkedInProfileURL" target="_blank" id="linkedin-icon" class="linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href="https://twitter.com/YourTwitterProfileURL" target="_blank" id="twitter-icon" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+    
+              
+            </div>
+          </div>
+          
+    
+          
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">Meet Us!</h5>
+    
+           
+    
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">123 Home, Sweet Home</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">DontEmailUs@Something.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">911</span>
+              </li>
+            </ul>
+          </div>
+          
+    
+        
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Opening hours :(</h5>
+    
+            <table class="table text-center text-white">
+              <tbody class="fw-normal">
+                <tr>
+                  <td>Mon - Thu:</td>
+                  <td>8am - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Fri - Sat:</td>
+                  <td>8am - 10pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>Closed!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    
+      
+    
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    
+        We Accept :
+    
+    
+    <div class="credit-cards" style="text-align: center; width: 100%">
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_visa.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_master.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_paypal.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_unionpay.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_linepay.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_711_pay.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_fm_pay.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_taishin.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_amex.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_ecpay.png"/>
+      <img height="40" src="https://shoplineimg.com/assets/footer/card_jcb.png"/>
+    </div>
+    
+        © 9/11 Copyright: Smith private Limited
+       
+      </div>
+      
+    </footer>
+    
+    
+      
+  
+  </div>
+  
+  <div class="overlay" id="cart-overlay">
+    <div class="cart-details">
+        
+        <div id="cart-content"></div>
+    </div>
+</div>
+  
+  
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="products.js" ></script>
+
+
+
+  <script src="load.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration:1000
+    });
+  </script>
+  <script src="cart.js" ></script>
+</body>
+</html>
