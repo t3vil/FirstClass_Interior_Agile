@@ -16,7 +16,7 @@ function updateProgressBar() {
     }, 15); 
   }
 
-  // Function to hide the progress bar and show the website content 
+  // Function to hide the progress bar and show the website content
   function hideProgressBar() {
     const progressContainer = document.getElementById("progress-container");
     progressContainer.style.display = "none";

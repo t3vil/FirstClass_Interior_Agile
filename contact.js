@@ -8,7 +8,7 @@ const alertOverlay = document.getElementById("alert-overlay");
   const form = document.querySelector("form");
   const phoneInput = form.querySelector('input[type="tel"]');
 
-// Function to show the alert overlay 
+// Function to show the alert overlay
 function showAlert(message) {
     alertMessage.textContent = message;
     alertOverlay.style.display = "block";
